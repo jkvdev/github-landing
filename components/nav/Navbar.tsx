@@ -1,6 +1,6 @@
 "use client";
 
-import Container from "@/components/containers/Container";
+import { Container } from "@/components/containers";
 import ProductNav from "./ProductNav";
 import SolutionNav from "./SolutionNav";
 import OpenSourceNav from "./OpenSourceNav";
