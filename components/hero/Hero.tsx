@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 
 const Hero = () => {
@@ -6,7 +7,7 @@ const Hero = () => {
   const [hovered1, setHovered1] = useState<boolean>(false);
   return (
     <div className="relative max-w-[1280px] lg:pt-32 md:px-10 mx-auto pt-16">
-      <img
+      <Image
         className="absolute hero-drone top-28 w-1/4 h-auto right-0 xl:right-0"
         width="500"
         height="326"
@@ -15,7 +16,7 @@ const Hero = () => {
       />
       <div className="flex">
         <div className="relative ">
-          <img
+          <Image
             aria-hidden="true"
             className=""
             src="https://github.githubassets.com/images/modules/site/home-campaign/lines-hero.svg"
@@ -64,7 +65,7 @@ const Hero = () => {
               className=" border-[1px] border-neutral-600 copilot rounded-full inline-block"
             >
               <div className="flex items-center p-3 px-5">
-                <img
+                <Image
                   className=" d-block w-auto flex-grow-0 flex-shrink-0 mr-6 max-md:mr-3 scale-110"
                   width="44"
                   height="44"
@@ -182,41 +183,47 @@ const Hero = () => {
               Trusted by the world&apos;s leading&nbsp;organizations&nbsp;↘︎
             </p>
             <div className="flex flex-wrap justify-between items-center">
-              <img
+              <Image
                 src="https://github.githubassets.com/images/modules/site/home-campaign/logos/stripe.svg"
                 alt="Stripe logo"
                 height="44"
-                className="my-3 scale-90"
+                width="93"
+                className="my-3 scale-90 object-contain"
               />
-              <img
+              <Image
                 src="https://github.githubassets.com/images/modules/site/home-campaign/logos/pinterest.svg"
                 alt="Pinterest logo"
                 height="44"
-                className="my-3 scale-90"
+                width="140"
+                className="my-3 scale-90 object-contain"
               />
-              <img
+              <Image
                 src="https://github.githubassets.com/images/modules/site/home-campaign/logos/kpmg.svg"
                 alt="KPMG logo"
                 height="44"
-                className="my-3 scale-90"
+                width="103"
+                className="my-3 scale-90 object-contain"
               />
-              <img
+              <Image
                 src="https://github.githubassets.com/images/modules/site/home-campaign/logos/mercedes.svg"
                 alt="Mercedes-Benz logo"
                 height="44"
-                className="my-3 w-[200px]"
+                width="200"
+                className="my-3 w-[200px] object-contain"
               />
-              <img
+              <Image
                 src="https://github.githubassets.com/images/modules/site/home-campaign/logos/pg.svg"
                 alt="P&amp;G logo"
                 height="32"
-                className="my-3 scale-90"
+                width="75"
+                className="my-3 scale-90 object-contain"
               />
-              <img
+              <Image
                 src="https://github.githubassets.com/images/modules/site/home-campaign/logos/telus.svg"
                 alt="Telus logo"
                 height="32"
-                className="my-3 scale-90"
+                width="170"
+                className="my-3 scale-90 object-contain"
               />
             </div>
           </div>

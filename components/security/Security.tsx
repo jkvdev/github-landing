@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import HoverCard from "../productivity/HoverCard";
+import { HoverCard } from "../productivity";
 import Projects from "./Projects";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Security = () => {
   const [hovered, setHovered] = useState<boolean>(false);
@@ -271,7 +272,7 @@ const Security = () => {
             transition={{ type: "tween" }}
             className="rounded-r-md overflow-hidden flex items-center"
           >
-            <img
+            <Image
               className="responsive js-build-in-item build-in-scale-fade build-in-animate origin-bottom-right"
               width="1288"
               height="992"
@@ -333,7 +334,7 @@ const Security = () => {
             </div>
           </div>
           <div className="overflow-hidden rounded-s-lg">
-            <img
+            <Image
               className="w-full h-auto js-build-in-item build-in-scale-fade build-in-animate"
               width="1209"
               height="890"
@@ -393,7 +394,7 @@ const Security = () => {
             </div>
           </div>
           <div className="overflow-hidden rounded-s-lg">
-            <img
+            <Image
               className="w-full h-auto "
               width="1208"
               height="764"

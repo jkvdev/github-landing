@@ -6,6 +6,7 @@ import CodeSpace from "./CodeSpace";
 import HoverCard from "./HoverCard";
 import CopilotFeature from "./CopilotFeature";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Productivity = () => {
   const [hovered, setHovered] = useState<boolean>(false);
@@ -125,7 +126,7 @@ const Productivity = () => {
               </div>
             </div>
             <div className="overflow-hidden rounded-s-lg">
-              <img
+              <Image
                 className="w-full h-auto js-build-in-item build-in-scale-fade build-in-animate"
                 width="1209"
                 height="890"
@@ -189,7 +190,7 @@ const Productivity = () => {
               </div>
             </div>
             <div className="overflow-hidden rounded-s-lg">
-              <img
+              <Image
                 className="w-full  h-auto"
                 width="1208"
                 height="764"

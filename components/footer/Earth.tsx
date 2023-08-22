@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import createGlobe from "cobe";
 
 const Earth: React.FC = () => {

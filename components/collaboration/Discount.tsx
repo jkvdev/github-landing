@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Discount = () => {
   const [hovered, setHovered] = useState<boolean>(false);
   return (
     <div className="flex relative md:pl-10">
-      <img
+      <Image
         alt=""
         aria-hidden="true"
         width="2712"
@@ -21,7 +22,7 @@ const Discount = () => {
           whileInView={{ height: "100%" }}
           className="w-[3px] h-full increase1"
         ></motion.div>
-        <img
+        <Image
           alt=""
           aria-hidden="true"
           width="81"
@@ -102,7 +103,7 @@ const Discount = () => {
             <div className="relative">
               <div className="relative">
                 <div className="md:absolute z-[1] top-[-200px] lg:top-[-300px] right-0 shadow-2xl">
-                  <img
+                  <Image
                     src="https://github.githubassets.com/images/modules/site/home-campaign/illu-projects.png"
                     alt=""
                     loading="lazy"

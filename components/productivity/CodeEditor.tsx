@@ -1,3 +1,4 @@
+import Image from "next/image";
 import CodeBlock from "./CodeBlock";
 import { motion } from "framer-motion";
 
@@ -297,7 +298,7 @@ const CodeEditor = () => {
             </div>
           </div>
           <div className="px-6 flex items-center justify-between h-full bg-[#040d21]">
-            <img
+            <Image
               className="w-full h-auto md:block"
               width="1238"
               height="1404"

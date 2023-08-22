@@ -81,17 +81,17 @@ const OpenSourceNav = () => {
           </span>
           <ul className="text-sm text-neutral-500 mt-1 w-full">
             <li>
-              <a href="" className="block py-2 hover:text-blue-600">
+              <a href="/" className="block py-2 hover:text-blue-600">
                 Topics
               </a>
             </li>
             <li>
-              <a href="" className="block py-2 hover:text-blue-600">
+              <a href="/" className="block py-2 hover:text-blue-600">
                 Trendings
               </a>
             </li>
             <li>
-              <a href="" className="block py-2 hover:text-blue-600">
+              <a href="/" className="block py-2 hover:text-blue-600">
                 Collections
               </a>
             </li>

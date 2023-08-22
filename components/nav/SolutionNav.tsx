@@ -57,17 +57,17 @@ const SolutionNav = () => {
           <span className="text-neutral-800 font-semibold text-base">For</span>
           <ul className="text-sm text-neutral-500 mt-1 w-full">
             <li>
-              <a href="" className="block py-2 hover:text-blue-600">
+              <a href="/" className="block py-2 hover:text-blue-600">
                 Enterprise
               </a>
             </li>
             <li>
-              <a href="" className="block py-2 hover:text-blue-600">
+              <a href="/" className="block py-2 hover:text-blue-600">
                 Teams
               </a>
             </li>
             <li>
-              <a href="" className="block py-2 hover:text-blue-600">
+              <a href="/" className="block py-2 hover:text-blue-600">
                 Startups
               </a>
             </li>
@@ -85,7 +85,7 @@ const SolutionNav = () => {
           </span>
           <ul className="text-sm text-neutral-500 mt-1 w-full">
             <li>
-              <a href="" className="block py-2 hover:text-blue-600">
+              <a href="/" className="block py-2 hover:text-blue-600">
                 CI/CD & Automation
               </a>
             </li>
@@ -109,7 +109,7 @@ const SolutionNav = () => {
           </span>
           <ul className="text-sm text-neutral-500 mt-1 w-full">
             <li>
-              <a href="" className="block py-2 hover:text-blue-600">
+              <a href="/" className="block py-2 hover:text-blue-600">
                 Customer stories
               </a>
             </li>

@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import Discount from "./Discount";
-import HoverCard from "../productivity/HoverCard";
+import { HoverCard } from "../productivity";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Collaboration = () => {
   const [hovered, setHovered] = useState<boolean>(false);
@@ -79,7 +80,7 @@ const Collaboration = () => {
           </h3>
         </motion.div>
       </div>
-      <img
+      <Image
         className="w-full h-auto d-block rounded-lg border-[1px] border-[#30363d]  "
         width="2500"
         height="1500"
@@ -87,7 +88,7 @@ const Collaboration = () => {
         decoding="async"
         alt="Illustration of project table view with cards grouped by 'Feature planning' phase."
         src="https://github.githubassets.com/images/modules/site/issues/illo/issues-plan.png"
-      ></img>
+      />
       <Discount />
       <div className="flex justify-between items-center">
         <div className="flex justify-between md:space-x-10 max-md:flex-col">
@@ -144,7 +145,7 @@ const Collaboration = () => {
               transition={{ type: "tween", duration: 0.3 }}
               className="overflow-hidden rounded-s-lg"
             >
-              <img
+              <Image
                 className="w-full h-auto"
                 width="1209"
                 height="890"
@@ -288,7 +289,7 @@ const Collaboration = () => {
                 target="_blank"
                 className="rounded-md bg-[#161b22] border-[0.5px] border-[#30363d] flex flex-col items-center m-2 p-6"
               >
-                <img
+                <Image
                   alt="Homebrew avatar"
                   width="96"
                   height="96"
@@ -327,7 +328,7 @@ const Collaboration = () => {
                 target="_blank"
                 className="rounded-md  bg-[#161b22] border-[0.5px] border-[#30363d] flex flex-col items-center m-2 p-6"
               >
-                <img
+                <Image
                   alt="Homebrew avatar"
                   width="96"
                   height="96"
@@ -366,7 +367,7 @@ const Collaboration = () => {
                 target="_blank"
                 className="rounded-md  bg-[#161b22] border-[0.5px] border-[#30363d] flex flex-col items-center m-2 p-6"
               >
-                <img
+                <Image
                   alt="Homebrew avatar"
                   width="96"
                   height="96"
@@ -405,7 +406,7 @@ const Collaboration = () => {
                 target="_blank"
                 className="rounded-md  bg-[#161b22] border-[0.5px] border-[#30363d] flex flex-col items-center m-2 p-6"
               >
-                <img
+                <Image
                   alt="Homebrew avatar"
                   width="96"
                   height="96"
@@ -444,7 +445,7 @@ const Collaboration = () => {
                 target="_blank"
                 className="rounded-md  bg-[#161b22] border-[0.5px] border-[#30363d] flex flex-col items-center m-2 p-6"
               >
-                <img
+                <Image
                   alt="Homebrew avatar"
                   width="96"
                   height="96"
@@ -483,7 +484,7 @@ const Collaboration = () => {
                 target="_blank"
                 className="rounded-md  bg-[#161b22] border-[0.5px] border-[#30363d] flex flex-col items-center m-2 p-6"
               >
-                <img
+                <Image
                   alt="Homebrew avatar"
                   width="96"
                   height="96"
@@ -522,7 +523,7 @@ const Collaboration = () => {
                 target="_blank"
                 className="rounded-md bg-[#161b22] border-[0.5px] border-[#30363d] flex flex-col items-center m-2 p-6"
               >
-                <img
+                <Image
                   alt="Homebrew avatar"
                   width="96"
                   height="96"
@@ -561,7 +562,7 @@ const Collaboration = () => {
                 target="_blank"
                 className="rounded-md  bg-[#161b22] border-[0.5px] border-[#30363d] flex flex-col items-center m-2 p-6"
               >
-                <img
+                <Image
                   alt="Homebrew avatar"
                   width="96"
                   height="96"
@@ -600,7 +601,7 @@ const Collaboration = () => {
                 target="_blank"
                 className="rounded-md  bg-[#161b22] border-[0.5px] border-[#30363d] flex flex-col items-center m-2 p-6"
               >
-                <img
+                <Image
                   alt="Homebrew avatar"
                   width="96"
                   height="96"

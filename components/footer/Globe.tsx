@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Earth from "./Earth";
 import Earth2 from "./Earth2";
+import Image from "next/image";
 
 const Globe = () => {
   const [hovered, setHovered] = useState<boolean>(false);
@@ -96,7 +97,7 @@ const Globe = () => {
       <div className={`relative z-[2] sm:hidden`}>
         <Earth2 />
       </div>
-      <img
+      <Image
         className="absolute bottom-0 left-0 w-full h-full object-cover d-block pointer-events-none"
         width="801"
         height="807"
@@ -105,9 +106,9 @@ const Globe = () => {
         alt=""
         aria-hidden="true"
         src="https://github.githubassets.com/images/modules/site/home-campaign/footer-galaxy.jpg"
-      ></img>
+      ></Image>
       <div className="flex items-center justify-center relative z-[2] mt-[-200px]">
-        <img
+        <Image
           alt="Mona looking at the galaxy"
           width="801"
           height="807"

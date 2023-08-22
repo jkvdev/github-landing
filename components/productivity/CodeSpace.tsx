@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const CodeSpace = () => {
   const [hovered, setHovered] = useState<boolean>(false);
@@ -12,7 +13,7 @@ const CodeSpace = () => {
   };
   return (
     <div className="flex relative md:pl-10">
-      <img
+      <Image
         alt=""
         aria-hidden="true"
         width="2712"
@@ -31,7 +32,7 @@ const CodeSpace = () => {
           transition={{ duration: 0.3 }}
           className="w-[3px] h-full increase origin-top"
         ></motion.div>
-        <img
+        <Image
           alt=""
           aria-hidden="true"
           width="81"
@@ -112,14 +113,16 @@ const CodeSpace = () => {
                   transition={{ type: "tween" }}
                   className="sm:absolute z-[1] top-[-200px] right-7 shadow-2xl"
                 >
-                  <img
+                  <Image
                     src="/pic.png"
                     alt=""
                     loading="lazy"
                     decoding="async"
-                    className=" w-[300px] h-auto rounded-md"
+                    width={300}
+                    height={267}
+                    className=" w-[300px] h-auto rounded-md object-contain"
                   />
-                  <img
+                  <Image
                     src="https://github.githubassets.com/images/modules/site/codespaces/illo-cursor.png"
                     alt=""
                     loading="lazy"
@@ -141,7 +144,7 @@ const CodeSpace = () => {
                   transition={{ type: "tween", delay: 0.1 }}
                   className=" overflow-hidden max-w-[373px] bottom-0 rounded-md relative hidden sm:block build-in-animate"
                 >
-                  <img
+                  <Image
                     src="https://github.githubassets.com/images/modules/site/codespaces/illo-ports.png"
                     loading="lazy"
                     width="746"
