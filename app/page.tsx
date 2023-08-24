@@ -6,6 +6,7 @@ import { Productivity } from "@/components/productivity";
 import { Collaboration } from "@/components/collaboration";
 import { Security } from "@/components/security";
 import { Footer, Globe } from "@/components/footer";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -22,9 +23,10 @@ export default function Home() {
         <div className="overflow-x-hidden">
           {/* BG Image */}
           <div className="relative">
-            <img
-              className="absolute top-0 transition ease-in duration-200 max-xl:right-[-1050px] xl:right-[-970px] -z-30 image"
+            <Image
+              className="absolute top-0 transition ease-in duration-200 max-xl:right-[-1050px] xl:right-[-970px] -z-30 image object-contain"
               width="4377"
+              height="2041"
               src="https://github.githubassets.com/images/modules/site/home-campaign/hero-bg.webp"
               alt="background"
             />

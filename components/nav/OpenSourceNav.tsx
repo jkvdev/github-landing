@@ -1,6 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 const OpenSourceNav = () => {
   const [show, setShow] = useState(false);
@@ -34,24 +36,16 @@ const OpenSourceNav = () => {
           show ? "lg:text-neutral-300" : ""
         }`}
       >
+        {/* Title */}
         Open Source
-        <svg
-          opacity="0.5"
-          aria-hidden="true"
-          height="16"
-          fill="currentColor"
-          viewBox="0 0 16 16"
-          version="1.1"
-          width="16"
-          data-view-component="true"
+        <MdKeyboardArrowDown
+          fontSize={20}
           className={`octicon octicon-chevron-down HeaderMenu-icon ml-1 transition-all ease-in duration-200  max-lg:scale-x-125 ${
             show
               ? "lg:mt-2 opacity-40 max-lg:rotate-0"
               : "mt-0 max-lg:-rotate-90"
           }`}
-        >
-          <path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"></path>
-        </svg>
+        />
       </button>
       <div
         className={`relative lg:absolute -ml-5 bg-white rounded-md lg:py-4 p-6 w-[320px] transition ease-in duration-150 ${
@@ -81,19 +75,19 @@ const OpenSourceNav = () => {
           </span>
           <ul className="text-sm text-neutral-500 mt-1 w-full">
             <li>
-              <a href="/" className="block py-2 hover:text-blue-600">
+              <Link href="/" className="block py-2 hover:text-blue-600">
                 Topics
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/" className="block py-2 hover:text-blue-600">
+              <Link href="/" className="block py-2 hover:text-blue-600">
                 Trendings
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/" className="block py-2 hover:text-blue-600">
+              <Link href="/" className="block py-2 hover:text-blue-600">
                 Collections
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

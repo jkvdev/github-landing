@@ -1,13 +1,16 @@
+"use client";
+
 import { useState, useEffect } from "react";
 import { useSpring, animated } from "@react-spring/web";
 
 type Props = {
   children: React.ReactNode;
   backgroundColor: string;
-  direction: string;
+  direction?: string;
   left: string;
 };
 
+// Logic for mouse position
 const calc = (x: number, y: number): [number, number, number] => [
   -(y - window.innerHeight / 2) / 360,
   (x - window.innerWidth / 2) / 240,
@@ -24,6 +27,7 @@ const HoverCard: React.FC<Props> = ({
   left,
 }) => {
   const [hovered, setIsHovered] = useState(false);
+
   const [springProps, set] = useSpring(() => ({
     xys: [0, 0, 1],
     config: { mass: 5, tension: 6000, friction: 1000 },
@@ -31,6 +35,7 @@ const HoverCard: React.FC<Props> = ({
 
   const [cursorCoords, setCursorCoords] = useState({ x: 0, y: 0 });
 
+  // Tilt animation
   useEffect(() => {
     const handleMousePosition = (event: MouseEvent) => {
       const { clientX: x, clientY: y } = event;
@@ -72,7 +77,7 @@ const HoverCard: React.FC<Props> = ({
 
   return (
     <animated.div
-      className="  overflow-hidden  mb-3 md:mb-8 rounded-xl"
+      className="overflow-hidden  mb-3 md:mb-8 rounded-xl"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{ transform: springProps.xys.to(trans) }}

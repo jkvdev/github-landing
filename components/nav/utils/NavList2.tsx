@@ -1,41 +1,39 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 
 type Props = {
   main: string;
-  path: string;
+  path?: string;
+  svg?: React.ReactNode;
 };
 
-const NavList2 = ({ main, path }: Props) => {
+const NavList2 = ({ main, path, svg }: Props) => {
   const [focus, setFocus] = useState<boolean>(false);
   return (
-    <a
+    <Link
       onMouseEnter={() => setFocus(true)}
       onMouseLeave={() => setFocus(false)}
-      href="#"
+      href="/"
       className={`flex  items-center ${
         focus ? "text-blue-600" : "text-neutral-500"
       }`}
     >
+      {/* Text */}
       {main}
-      <svg
-        aria-hidden="true"
-        height="16"
-        viewBox="0 0 16 16"
-        fill="currentColor"
-        version="1.1"
-        width="16"
-        data-view-component="true"
-        className={`octicon octicon-link-external HeaderMenu-external-icon color-fg-subtle ml-2 transition ease-in duration-150 ${
+
+      {/* SVG */}
+      <span
+        className={`text-[18px] octicon octicon-link-external HeaderMenu-external-icon color-fg-subtle !text-neutral-500 ml-2 transition ease-in duration-150 ${
           focus
             ? " translate-x-0 text-blue-500 opacity-100"
             : " -translate-x-3 opacity-0"
         }`}
       >
-        <path d={path}></path>
-      </svg>
-    </a>
+        {svg}
+      </span>
+    </Link>
   );
 };
 
