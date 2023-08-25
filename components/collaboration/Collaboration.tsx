@@ -4,28 +4,10 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { LuHeartHandshake } from "react-icons/lu";
 import { FiArrowRight } from "react-icons/fi";
-import { AiOutlineHeart } from "react-icons/ai";
 import Link from "next/link";
 import { SponsorGrid } from "./utils";
 
 const Collaboration = () => {
-  // Animations
-  const container = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.1,
-      },
-    },
-  };
-
-  const item = {
-    hidden: { opacity: 0, y: 40 },
-    show: { opacity: 1, y: 0 },
-  };
-
   return (
     <div className="max-w-[1280px] mx-auto">
       <div className="flex md:pl-7 space-x-3 md:space-x-10">
